@@ -1,27 +1,27 @@
 student_count = 20
 
 students = [
- "Dave",
- "Eddie",
- "Catharina",
- "Igor",
- "Marco",
- "Lisa",
- "Michiel",
- "Jean",
- "Nicola",
- "Jennie",
- "Iona",
- "Nikesh",
- "Chloe",
- "Jamie",
- "Peter",
- "Talal",
- "Charlie",
- "Thomas",
- "Charlotte",
- "Zoe",
- "Hannah"
+ { :name => "Dave", :cohort => :June},
+ { :name =>"Eddie", :cohort => :June},
+ { :name =>"Catharina", :cohort => :June},
+ { :name =>"Igor", :cohort => :June},
+ { :name =>"Marco", :cohort => :June},
+ { :name =>"Lisa", :cohort => :June},
+ { :name =>"Michiel", :cohort => :June},
+ { :name =>"Jean", :cohort => :June},
+ { :name =>"Nicola", :cohort => :June},
+ { :name =>"Jennie" , :cohort => :June},
+ { :name =>"Iona", :cohort => :June},
+ { :name =>"Nikesh", :cohort => :June},
+ { :name =>"Chloe", :cohort => :June},
+ { :name =>"Jamie", :cohort => :June},
+ { :name =>"Peter", :cohort => :June},
+ { :name =>"Talal", :cohort => :June},
+ { :name =>"Charlie", :cohort => :June},
+ { :name =>"Thomas", :cohort => :June},
+ { :name =>"Charlotte", :cohort => :June},
+ { :name =>"Zoe", :cohort => :June},
+ { :name =>"Hannah", :cohort => :June}
 ]
 
 def print_header
@@ -29,9 +29,9 @@ def print_header
 	puts "----------------"
 end
 
-def print(names)
-	names.each do |name|
-		puts name
+def print(students)
+	students.each do |student|
+		puts "#{student[:name]} (#{student[:cohort]} cohort)"
 	end
 end
 
