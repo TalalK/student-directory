@@ -1,25 +1,31 @@
 student_count = 20
+
+students = [
+ "Dave",
+ "Eddie",
+ "Catharina",
+ "Igor",
+ "Marco",
+ "Lisa",
+ "Michiel",
+ "Jean",
+ "Nicola",
+ "Jennie",
+ "Iona",
+ "Nikesh",
+ "Chloe",
+ "Jamie",
+ "Peter",
+ "Talal",
+ "Charlie",
+ "Thomas",
+ "Charlotte",
+ "Zoe",
+ "Hannah"]
 puts "The students of my cohort at Makers Academy"
 puts "--------------------"
-puts "Dave"
-puts "Eddie"
-puts "Catharina"
-puts "Igor"
-puts "Marco"
-puts "Lisa"
-puts "Michiel"
-puts "Jean"
-puts "Nicola"
-puts "Jennie"
-puts "Iona"
-puts "Nikesh"
-puts "Chloe"
-puts "Jamie"
-puts "Peter"
-puts "Talal"
-puts "Charlie"
-puts "Thomas"
-puts "Charlotte"
-puts "Zoe"
-puts "Hannah"
-puts "Overall, we have #{student_count} great students"
+
+students.each do |student|
+	puts student
+end	
+ puts "Overall, we have #{students.length} great students"
