@@ -21,3 +21,6 @@ puts "Thomas"
 puts "Charlotte"
 puts "Zoe"
 puts "Hannah"
+print "Overall, we have"
+print 20
+puts " great students"
